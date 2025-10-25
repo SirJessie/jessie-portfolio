@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {HashRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from './sections/Header.jsx'
 import MainContainer from './sections/MainContainer.jsx'
