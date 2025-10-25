@@ -24,7 +24,7 @@ export default function Header({isDarkMode, toggleDarkmode}) {
                 <div className="header-content-details">
                     <span className="name">Jessie Rom Turin</span>
                     <span className="location"><i className="fa-solid fa-location-dot"></i>Metro Manila, Philippines</span>
-                    <span className="title"><span>Software Developer</span> | <span>ERP Developer</span> | <span>Racist(Car Racist)</span></span>
+                    <span className="title"><span>Software Developer</span> | <span>ERP Developer</span></span>
                 </div>
                 <div className="header-content-buttons">
                     <div className="socials">

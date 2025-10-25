@@ -17,3 +17,26 @@
         grid-row-start: 3;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .inner-container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .header-container .header-image{
+        width: 80px;
+        height: 80px;
+    }
+    .header-container .header-content{
+        width: calc(((100% - 80px) - 1em) - 3.5em);
+        padding: 0;
+    }
+
+    .header-container .header-darkmode-slider{
+        width: 3.5em;
+    }
+    .header-container .header-darkmode-slider .switch{
+        margin-left: 0;
+    }
+}
