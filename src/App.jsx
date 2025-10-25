@@ -6,7 +6,13 @@ import NotFound from './Pages/404Page.jsx'
 import Footer from './sections/Footer.jsx'
 
 export default function App() {
-  const [darkmode, setDarkmode] = useState(false);
+  const [darkmode, setDarkmode] = useState(() => {
+          return localStorage.getItem("darkmode") === "true" ? true : false;
+  });
+
+  useEffect(() => {  
+      localStorage.setItem("darkmode", darkmode);
+  }, [darkmode]);
 
   return (
     <>
@@ -16,7 +22,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={
                 <>
-                  <Header toggleDarkmode={setDarkmode} />
+                  <Header isDarkMode={darkmode} toggleDarkmode={setDarkmode} />
                   <MainContainer />
                   <Footer />
                 </>
