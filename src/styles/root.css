@@ -1,0 +1,52 @@
+/* VARIABLES */
+:root{
+    --primary-color: #fff;
+    --secondary-color: #fcfcfcef;
+    --foreground-color: #000;
+    --accent-color: #e64716;
+    --gradient-color: linear-gradient(135deg, rgba(249, 206, 52, 1) 12%,rgba(238, 42, 123, 1) 48%, rgba(98, 40, 215, 1) 87%);
+    --border-color: #eaeaea;
+    --hover-button-bg: #6c6c6c;
+}
+.darkmode{
+    --primary-color: #000;
+    --secondary-color: #1d1d1d;
+    --foreground-color: #fff;
+    --accent-color: #e64716;
+    --gradient-color: linear-gradient(135deg, rgba(249, 206, 52, 0.5) 12%,rgba(238, 42, 123, 0.5) 48%, rgba(98, 40, 215, 0.5) 87%);
+    --border-color: #333;
+    --hover-button-bg: #d2d2d2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */

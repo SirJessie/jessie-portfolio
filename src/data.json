@@ -1,0 +1,29 @@
+{
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "techstack" : [
+        {
+            "title": "Front-end",
+            "items": ["Javascript", "React", "Vite.js", "HTML", "CSS", "Bootstrap", "JQuery", "Aurelia", "Typescript"]
+        },
+        {
+            "title": "Back-end",
+            "items": ["C#", "SQL", "MSSQL", "MySQL", "VB.NET", "PHP"]
+        },
+        {
+            "title": "Dev Tools",
+            "items": ["Git", "GitHub", "VS Code", "Visual Studio", "Postman"]
+        },
+        {
+            "title": "Others",
+            "items": ["GitHub Actions", "Azure Devops", "Copilot", "Acumatica ERP"]
+        }
+    ],
+    "work" : [
+        {
+            "work_id": 1,
+            "company": "Infosoft Consulting Corp",
+            "role": "Business Application Developer / Software Developer",
+            "duration": "August 2022 - Present"
+        }
+    ]
+}

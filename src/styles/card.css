@@ -1,0 +1,49 @@
+@import url(../styles/root.css);
+
+.card{
+    background-color: var(--secondary-color);
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-header,
+.card-content,
+.card-footer{
+    padding: 0.5em 1.5em;
+}
+
+.card .card-header{
+    display: flex;
+    justify-content: space-between;
+    line-height: 3.5em;
+}
+
+.card-header .card-header-title{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.card-header .card-header-title .icon{
+    font-size: 20px;
+}
+
+.card-header .card-header-title span{
+    font-weight: 800;
+    font-size: 18px;
+}
+.card-header .card-header-button{
+    position: relative;
+    display: flex;
+    gap: 1em;
+}
+.card-header .card-header-button span{
+    font-weight: 600;
+}
+.card-header .card-header-button i{
+    font-size: 18px;
+    font-weight: 600;
+    transform: translateY(0.6em);
+}
