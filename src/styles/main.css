@@ -25,8 +25,8 @@
     gap: 0.5em;
     width: 100%;
     padding: 0.5em;
-    /* b  */
     margin: 0 0 1em 0;
+    animation: fade-in 0.4s ease-in-out;
 }
 
 .header-container .header-image {
@@ -48,32 +48,30 @@
     padding: 0.5em;
 }
 
-.header-container .header-content .location{
-    margin: 0.2em 0;
-}
-.header-container .header-content .name{
+.header-container .header-content .header-content-details .name{
     font-size: 16px;
     font-weight: 600;
 }
 
-.header-container .header-content .location{
+.header-container .header-content .header-content-details .location{
     display: flex;
     align-items: center;
     font-size: 10px;
     font-weight: 500;
+    margin: 0.2em 0;
 }
-.header-container .header-content .title{
+.header-container .header-content .header-content-details .title{
     font-size: 12px;
     font-weight: 600;
 }
 
-.header-container .header-content .socials{
+.header-container .header-content .header-content-buttons .socials{
     margin-top: 0.5em;
     display: flex;
     gap: .2em;
 }
 
-.header-container .header-content .socials a{
+.header-container .header-content .header-content-buttons .socials a{
     background-color: var(--secondary-color);
     border: solid 1px var(--border-color);
     border-radius: 5px;
@@ -83,23 +81,22 @@
     padding: 0.2em .4em;
 }
 
-.header-container .header-content .socials a i{
+.header-container .header-content .header-content-buttons .socials a i{
     font-size: 14px;
 }
 
-.header-container .header-content .socials a .merge-button{
+.header-container .header-content .header-content-buttons .socials a .merge-button{
     display: flex;
     align-items: center;
     gap: 0.4em;
     line-height: 1.5em;
-    padding: 0 0.em;
 }
 
-.header-container .header-content .socials a .merge-button .merge-button-text{
+.header-container .header-content .header-content-buttons .socials a .merge-button .merge-button-text{
     font-size: 10px;
 }
 
-.header-container .header-content .socials a:hover{
+.header-container .header-content .header-content-buttons .socials a:hover{
     background: var(--gradient-color);
     animation: hoverSocial 0.2s ease-in-out forwards;
 }
@@ -184,22 +181,26 @@
     grid-template-rows: repeat(2, auto);
     gap: 1em;
     width: 100%;
+    /* animation: fade-in 0.4s ease-in-out 0.2s; */
 }
 
 .main-container .sectionAbout{
     grid-column: 1 / span 2;
     grid-row: 1;
     text-align: justify;
+    animation: fade-in 0.4s ease-in-out 0.1s;
 }
 
 .main-container .sectionTechStack{
     grid-column: 1 / span 2;
     grid-row: 2;
+    animation: fade-in 0.4s ease-in-out 0.2s;
 }
 
 .main-container .sectionExp{
     grid-column: 3;
     grid-row: 1 / 3;
+    animation: fade-in 0.4s ease-in-out 0.1s;
 }
 
 /* TECH STACK */
@@ -322,6 +323,37 @@
 @keyframes hoverSocial {
     to{
         transform: translateY(-2px);
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animateUponLoadMainContent{
+    0%, 40%, 60%{
+        opacity: 0;
+        transform: translateY(780px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animateUponLoadExpandMainContainer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 /* END ANIMATION */

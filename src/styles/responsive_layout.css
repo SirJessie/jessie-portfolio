@@ -1,4 +1,4 @@
-@media screen and (max-width: 1080px){
+@media only screen and (max-width:1024px) {
     .main-container{
         grid-template-rows: repeat(3, auto);
     }
@@ -25,18 +25,49 @@
     }
 
     .header-container .header-image{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
+
     .header-container .header-content{
-        width: calc(((100% - 80px) - 1em) - 3.5em);
+        width: calc(((100% - 100px) - 1em) - 3.5em);
         padding: 0;
     }
 
+    .header-container .header-content .header.content-details .name{
+        font-size: 12px;
+    }
+    .header-container .header-content .header.content-details .location{
+        margin: 0;
+        font-size: 6px;
+    }
+    .header-container .header-content .header.content-details .title{
+        font-size: 8px;
+    }
+
+    .header-container .header-content .header-content-buttons .socials{
+        margin-top: 0;
+    }
+
+    .header-container .header-content .header-content-buttons .socials a i{
+        font-size: 12px;
+    }
+    
     .header-container .header-darkmode-slider{
         width: 3.5em;
     }
     .header-container .header-darkmode-slider .switch{
         margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 370px)
+{
+    .header-container .header-content .header-content-buttons .socials a .merge-button{
+        display: block;
+    }
+
+    .header-container .header-content .header-content-buttons .socials a .merge-button .merge-button-text{
+        display: none;
     }
 }

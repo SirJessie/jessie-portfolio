@@ -1,15 +1,6 @@
 import React from "react";
 
 export default function Header({isDarkMode, toggleDarkmode}) {
-
-    // const [darkmode, setDarkmode] = useState(() => {
-    //     return localStorage.getItem("darkmode") === "true" ? true : false;
-    // });
-
-    // useEffect(() => {  
-    //     localStorage.setItem("darkmode", darkmode);
-    // }, [darkmode]);
-
     const handleDarkmodeToggle = () => {
         isDarkMode ? toggleDarkmode(false) : toggleDarkmode(true);
     }
@@ -24,7 +15,7 @@ export default function Header({isDarkMode, toggleDarkmode}) {
                 <div className="header-content-details">
                     <span className="name">Jessie Rom Turin</span>
                     <span className="location"><i className="fa-solid fa-location-dot"></i>Metro Manila, Philippines</span>
-                    <span className="title"><span>Software Developer</span> | <span>ERP Developer</span></span>
+                    <span className="title"><span>Software Developer</span></span>
                 </div>
                 <div className="header-content-buttons">
                     <div className="socials">
